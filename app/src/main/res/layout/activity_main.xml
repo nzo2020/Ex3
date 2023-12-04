@@ -10,11 +10,40 @@
         android:id="@+id/textview_movieName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Gossip Girl"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
+
+    <ImageView
+        android:id="@+id/imageview_moviePoster"
+        android:layout_width="408dp"
+        android:layout_height="249dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gossip_girl_2" />
+
+    <TextView
+        android:id="@+id/textview_movieTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textview_movieName"
+        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="113dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_moviePoster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
+        app:srcCompat="@drawable/gossip_girl_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
