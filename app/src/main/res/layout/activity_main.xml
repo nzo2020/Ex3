@@ -209,11 +209,11 @@
 
     <TextView
         android:id="@+id/textView_movieTagline"
-        android:layout_width="54dp"
+        android:layout_width="74dp"
         android:layout_height="27dp"
         android:layout_marginTop="4dp"
         android:fontFamily="sans-serif"
-        android:text="fhvfhfj"
+        android:text="TV show"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/textview_movieName"
         app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
