@@ -6,44 +6,207 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview_movieName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Gossip Girl"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
-
     <ImageView
         android:id="@+id/imageview_moviePoster"
         android:layout_width="408dp"
         android:layout_height="249dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gossip_girl_2" />
-
-    <TextView
-        android:id="@+id/textview_movieTagline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/textview_movieName"
-        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="113dp"
         android:layout_height="153dp"
-        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageview_moviePoster"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
         app:srcCompat="@drawable/gossip_girl_1" />
+
+    <TextView
+        android:id="@+id/textview_movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Gossip Girl"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
+
+    <TextView
+        android:id="@+id/textView_twit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="twit"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_status"
+        app:layout_constraintStart_toStartOf="@+id/imageView_status"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_status" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="731dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
+
+    <ImageView
+        android:id="@+id/imageView_tiktok"
+        android:layout_width="82dp"
+        android:layout_height="69dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_face"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status"
+        app:srcCompat="@drawable/tiktok" />
+
+    <ImageView
+        android:id="@+id/imageView_face"
+        android:layout_width="89dp"
+        android:layout_height="69dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_tiktok"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_insta"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imageView_status"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_insta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/twit" />
+
+    <ImageView
+        android:id="@+id/imageView_insta"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_face"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_status"
+        app:layout_constraintTop_toTopOf="@+id/imageView_status"
+        app:srcCompat="@drawable/inste" />
+
+    <TextView
+        android:id="@+id/textView_insta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Insta"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_insta"
+        app:layout_constraintStart_toStartOf="@+id/imageView_insta"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_insta" />
+
+    <TextView
+        android:id="@+id/textView_face"
+        android:layout_width="69dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:text="Facebook"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_face"
+        app:layout_constraintStart_toStartOf="@+id/imageView_face"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_face" />
+
+    <TextView
+        android:id="@+id/textView_tik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="tiktok"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_tiktok"
+        app:layout_constraintStart_toStartOf="@+id/imageView_tiktok"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_tiktok" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_twit" />
+
+    <TextView
+        android:id="@+id/textView_plotsummaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Plot summary"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView_plotaumary"
+        android:layout_width="0dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="8dp"
+        android:text="The series focuses on a group of privileged teenagers who attend a prestigious high school in Upper East Side New York as their lives are constantly watched and sometimes ruined by an infamous local blogger. "
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView_plotsummaryTitle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="textview_movieName,textView_movieTagline" />
+
+    <ImageView
+        android:id="@+id/imageView_starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/barrier3"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textView2_starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_starRating"
+        app:layout_constraintStart_toStartOf="@+id/imageView_starRating"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_starRating" />
+
+    <TextView
+        android:id="@+id/textView_movieTagline"
+        android:layout_width="54dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:text="fhvfhfj"
+        app:layout_constraintStart_toStartOf="@+id/textview_movieName"
+        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
