@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DAD9D9"
     tools:context=".MainActivity">
 
     <ImageView
@@ -16,7 +17,7 @@
         app:srcCompat="@drawable/gossip_girl_2" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView_moviePoster1"
         android:layout_width="113dp"
         android:layout_height="153dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageview_moviePoster"
@@ -30,9 +31,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
         android:text="Gossip Girl"
+        android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView_moviePoster1"
         app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
 
     <TextView
@@ -40,21 +43,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
         android:text="twit"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView_status"
         app:layout_constraintStart_toStartOf="@+id/imageView_status"
         app:layout_constraintTop_toBottomOf="@+id/imageView_status" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="731dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
 
     <ImageView
         android:id="@+id/imageView_tiktok"
@@ -85,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_moviePoster1"
         app:srcCompat="@drawable/twit" />
 
     <ImageView
@@ -103,7 +97,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
         android:text="Insta"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView_insta"
         app:layout_constraintStart_toStartOf="@+id/imageView_insta"
         app:layout_constraintTop_toBottomOf="@+id/imageView_insta" />
@@ -113,7 +109,9 @@
         android:layout_width="69dp"
         android:layout_height="21dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
         android:text="Facebook"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView_face"
         app:layout_constraintStart_toStartOf="@+id/imageView_face"
         app:layout_constraintTop_toBottomOf="@+id/imageView_face" />
@@ -123,7 +121,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
         android:text="tiktok"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView_tiktok"
         app:layout_constraintStart_toStartOf="@+id/imageView_tiktok"
         app:layout_constraintTop_toBottomOf="@+id/imageView_tiktok" />
@@ -146,7 +146,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
         android:text="Plot summary"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -155,7 +158,9 @@
         android:layout_width="0dp"
         android:layout_height="133dp"
         android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
         android:text="The series focuses on a group of privileged teenagers who attend a prestigious high school in Upper East Side New York as their lives are constantly watched and sometimes ruined by an infamous local blogger. "
+        android:textColor="#000000"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textView_plotsummaryTitle" />
@@ -195,7 +200,9 @@
         android:id="@+id/textView2_starRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
         android:text="8.8"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/imageView_starRating"
         app:layout_constraintStart_toStartOf="@+id/imageView_starRating"
         app:layout_constraintTop_toBottomOf="@+id/imageView_starRating" />
@@ -205,7 +212,9 @@
         android:layout_width="54dp"
         android:layout_height="27dp"
         android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
         android:text="fhvfhfj"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/textview_movieName"
         app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
 
